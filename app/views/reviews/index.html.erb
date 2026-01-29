@@ -1,0 +1,23 @@
+<h1>Reviews</h1>
+<hr>
+<div class="reviews">
+<% @reviews.each do |review| %>
+  <p>
+    <strong>Reviewer:</strong>
+    <%= review.name %>
+  </p>
+
+  <p>
+    <strong>Comment:</strong>
+    <%= review.comment %>
+  </p>
+
+  <p>
+    <strong>Rating:</strong>
+    <%= review.stars %>
+  </p>
+    <hr>
+
+<% end %>
+</div>
+
