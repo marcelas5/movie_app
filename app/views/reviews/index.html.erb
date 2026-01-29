@@ -1,4 +1,4 @@
-<h1>Reviews</h1>
+<h1>Reviews for <%= link_to @movie.title, movie_path(@movie) %></h1>
 <hr>
 <div class="reviews">
 <% @reviews.each do |review| %>
