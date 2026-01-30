@@ -7,7 +7,7 @@ class ReviewsController < ApplicationController
 
   def new 
     @movie = Movie.find(params[:movie_id])
-    @review = Review.new
+    @review = @movie.reviews.new
   end
 
 end
