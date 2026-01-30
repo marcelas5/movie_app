@@ -25,7 +25,8 @@
       </tr>
     </table>
     <div class="review">
-    <p> <%= link_to "Who reviewed this movie?", movie_reviews_path(@movie) %> </p>
+      <%= link_to "Review this movie", new_movie_review_path(@movie), class: "review" %>
+      <p> <%= link_to "Who reviewed this movie?", movie_reviews_path(@movie) %> </p>
     </div>
   </div>
 </section>
