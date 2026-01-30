@@ -24,7 +24,9 @@
         <td><%= total_gross(@movie) %></td>
       </tr>
     </table>
-    <p class="review"> <%= link_to "Who reviewed this movie?", movie_reviews_path(@movie) %> </p>
+    <div class="review">
+    <p> <%= link_to "Who reviewed this movie?", movie_reviews_path(@movie) %> </p>
+    </div>
   </div>
 </section>
 
