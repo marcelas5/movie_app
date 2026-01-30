@@ -1,1 +1,16 @@
 <h1>Review for <%= link_to @movie.title, movie_path(@movie) %></h1>
+
+<%= form_with(model: [@movie, @review]) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, autofocus: true %>
+
+  <%= f.label :stars %>
+  <%= f.number_field :stars, in: 1..5 %>
+
+  <%= f.label :comment %>
+  <%= f.text_area :comment %>
+
+  <%= f.submit "Submit Review" %>
+
+<% end %>
+  
