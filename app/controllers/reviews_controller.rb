@@ -5,4 +5,9 @@ class ReviewsController < ApplicationController
     @reviews = @movie.reviews
   end
 
+  def new 
+    @movie = Movie.find(params[:movie_id])
+    @review = Review.new
+  end
+
 end
