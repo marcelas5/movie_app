@@ -347,6 +347,15 @@ section.user {
   }
 }
 
+.user-details {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction:row;
+  align-items: baseline;
+  gap: 2rem;
+}
+
 // Reviews Index Page
 
 ul.reviews {
