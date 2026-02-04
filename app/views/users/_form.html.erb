@@ -1,5 +1,6 @@
 <%= form_with(model: user) do |f| %>
-  <% render "shared/errors", object: user %>
+
+  <%= render "shared/errors", object: user %>
 
   <%= f.label :name %>
   <%= f.text_field :name %> 
