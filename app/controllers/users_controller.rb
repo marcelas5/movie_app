@@ -37,6 +37,8 @@ end
 def destroy
   @user = User.find(params[:id])
   @user.destroy
+  redirect_to events_url, status: :see_other, alert: "Account successfully deleted."
+end
 
 
 private
