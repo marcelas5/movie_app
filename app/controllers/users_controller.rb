@@ -33,6 +33,12 @@ def update
         render :edit, status: :unprocessable_entity
     end
 end 
+
+def destroy
+  @user = User.find(params[:id])
+  @user.destroy
+
+
 private
 
 def user_params
