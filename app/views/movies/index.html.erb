@@ -20,6 +20,7 @@
     </div>
   </section>
 <% end %>
+
 <% if current_user&.admin? %>
   <section class="admin">
     <%= link_to "Add New Movie", new_movie_path, class: "button" %>
