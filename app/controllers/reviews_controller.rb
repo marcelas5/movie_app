@@ -1,5 +1,7 @@
 class ReviewsController < ApplicationController
 
+  before_action :require_signin
+
   def index
     @movie = Movie.find(params[:movie_id])
     @reviews = @movie.reviews
