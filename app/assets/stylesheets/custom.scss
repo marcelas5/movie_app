@@ -230,9 +230,7 @@ section.movie-details {
     button[type="submit"] {
       @extend .btn, .btn-outline-secondary;
       border-color: #cdd3d8;
-      border-right: none;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      border-radius: 2;
       margin-top: 0;
     }
   }
